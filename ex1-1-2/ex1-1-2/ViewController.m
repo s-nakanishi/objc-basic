@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
+  NSArray *devices = @[@"iPhone", @"iPad", @"iPod"];
+  NSLog(@"%@", devices);
+  
+  NSDictionary *courses = @{@"IS":@"ITスペシャリスト科", @"CD":@"情報処理科", @"NT":@"パソコンネットワーク科"};
+  NSLog(@"IS:%@", courses[@"IS"]);
+  NSLog(@"CD:%@", courses[@"CD"]);
+  NSLog(@"NT:%@", courses[@"NT"]);
 }
 
 - (void)didReceiveMemoryWarning {
