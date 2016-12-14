@@ -15,6 +15,7 @@
 		71593F381E011A4F00FFF70C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71593F361E011A4F00FFF70C /* LaunchScreen.storyboard */; };
 		71593F431E011A4F00FFF70C /* ex1_1_4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71593F421E011A4F00FFF70C /* ex1_1_4Tests.m */; };
 		71593F4E1E011A4F00FFF70C /* ex1_1_4UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71593F4D1E011A4F00FFF70C /* ex1_1_4UITests.m */; };
+		71593F5D1E011C9500FFF70C /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 71593F5C1E011C9500FFF70C /* Account.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		71593F491E011A4F00FFF70C /* ex1-1-4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex1-1-4UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71593F4D1E011A4F00FFF70C /* ex1_1_4UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex1_1_4UITests.m; sourceTree = "<group>"; };
 		71593F4F1E011A4F00FFF70C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71593F5B1E011ABB00FFF70C /* Account.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		71593F5C1E011C9500FFF70C /* Account.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Account.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				71593F361E011A4F00FFF70C /* LaunchScreen.storyboard */,
 				71593F391E011A4F00FFF70C /* Info.plist */,
 				71593F281E011A4F00FFF70C /* Supporting Files */,
+				71593F5B1E011ABB00FFF70C /* Account.h */,
+				71593F5C1E011C9500FFF70C /* Account.m */,
 			);
 			path = "ex1-1-4";
 			sourceTree = "<group>";
@@ -271,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71593F301E011A4F00FFF70C /* ViewController.m in Sources */,
+				71593F5D1E011C9500FFF70C /* Account.m in Sources */,
 				71593F2D1E011A4F00FFF70C /* AppDelegate.m in Sources */,
 				71593F2A1E011A4F00FFF70C /* main.m in Sources */,
 			);
