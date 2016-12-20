@@ -15,6 +15,7 @@
 		71F9D2E91E0908C90036DC60 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71F9D2E71E0908C90036DC60 /* LaunchScreen.storyboard */; };
 		71F9D2F41E0908C90036DC60 /* ex2_1_3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F9D2F31E0908C90036DC60 /* ex2_1_3Tests.m */; };
 		71F9D2FF1E0908C90036DC60 /* ex2_1_3UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71F9D2FE1E0908C90036DC60 /* ex2_1_3UITests.m */; };
+		71F9D30D1E0909690036DC60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71F9D30C1E0909690036DC60 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		71F9D2FA1E0908C90036DC60 /* ex2-1-3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex2-1-3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		71F9D2FE1E0908C90036DC60 /* ex2_1_3UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex2_1_3UITests.m; sourceTree = "<group>"; };
 		71F9D3001E0908C90036DC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		71F9D30C1E0909690036DC60 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				71F9D2E71E0908C90036DC60 /* LaunchScreen.storyboard */,
 				71F9D2EA1E0908C90036DC60 /* Info.plist */,
 				71F9D2D91E0908C90036DC60 /* Supporting Files */,
+				71F9D30C1E0909690036DC60 /* Images.xcassets */,
 			);
 			path = "ex2-1-3";
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71F9D2E91E0908C90036DC60 /* LaunchScreen.storyboard in Resources */,
+				71F9D30D1E0909690036DC60 /* Images.xcassets in Resources */,
 				71F9D2E61E0908C90036DC60 /* Assets.xcassets in Resources */,
 				71F9D2E41E0908C90036DC60 /* Main.storyboard in Resources */,
 			);
