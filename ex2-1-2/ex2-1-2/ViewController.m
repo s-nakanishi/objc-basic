@@ -10,6 +10,7 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *img;
 @end
 
 @implementation ViewController
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   // Do any additional setup after loading the view, typically from a nib.
+  self.img.clipsToBounds = YES;
+  self.img.layer.cornerRadius = 15.0f;
 }
 
 - (void)didReceiveMemoryWarning {
