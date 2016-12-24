@@ -20,6 +20,10 @@
   UITouch *touch = [[event allTouches] anyObject];
   if ( touch.view.tag == self.label.tag ) {
     self.picker.alpha = 1;
+  } else {
+    self.picker.alpha = 0;
+    NSInteger index = [self.picker selectedRowInComponent:0];
+    self.label.text = self.items[index];
   }
 }
 
@@ -52,6 +56,7 @@
   // Do any additional setup after loading the view, typically from a nib.
   self.items = @[@"Apple", @"Banana", @"Orange"];
   
+  self.label.text = self.items[0];
   self.label.userInteractionEnabled = YES;
   self.label.tag = 100;
 

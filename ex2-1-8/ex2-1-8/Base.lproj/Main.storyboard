@@ -35,6 +35,7 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="ySm-Bo-KTI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4KD-sQ-dES"/>
                             <constraint firstItem="pSX-rU-NdX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Liy-uP-hGN"/>
