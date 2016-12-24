@@ -27,13 +27,25 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="96T-05-dMn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XaO-Ds-Tgj"/>
                             <constraint firstItem="96T-05-dMn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xDV-dv-gCz"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="vVZ-4a-cBx" appends="YES" id="c50-fN-YLR"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="96T-05-dMn" id="h8W-KV-8Xb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vVZ-4a-cBx">
+                    <connections>
+                        <action selector="onTap:" destination="BYZ-38-t0r" id="p6l-G7-BuJ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
