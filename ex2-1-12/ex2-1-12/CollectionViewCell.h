@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CollectionViewCell.h
 //  ex2-1-12
 //
 //  Created by 中西　真也 on 2016/12/25.
@@ -8,8 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController<UICollectionViewDelegate, UICollectionViewDataSource>
-
+@interface CollectionViewCell : UICollectionViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @end
-

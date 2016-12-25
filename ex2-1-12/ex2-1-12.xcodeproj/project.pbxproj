@@ -15,6 +15,10 @@
 		D5880A881E0FF52C0026E09E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5880A861E0FF52C0026E09E /* LaunchScreen.storyboard */; };
 		D5880A931E0FF52C0026E09E /* ex2_1_12Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5880A921E0FF52C0026E09E /* ex2_1_12Tests.m */; };
 		D5880A9E1E0FF52C0026E09E /* ex2_1_12UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5880A9D1E0FF52C0026E09E /* ex2_1_12UITests.m */; };
+		D5880AAC1E0FF9350026E09E /* item.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D5880AAB1E0FF9350026E09E /* item.xcassets */; };
+		D5880AAE1E0FFA000026E09E /* item.plist in Resources */ = {isa = PBXBuildFile; fileRef = D5880AAD1E0FFA000026E09E /* item.plist */; };
+		D5880AB21E1006330026E09E /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5880AB01E1006330026E09E /* CollectionViewCell.m */; };
+		D5880AB31E1006330026E09E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5880AB11E1006330026E09E /* CollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,11 @@
 		D5880A991E0FF52C0026E09E /* ex2-1-12UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex2-1-12UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5880A9D1E0FF52C0026E09E /* ex2_1_12UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex2_1_12UITests.m; sourceTree = "<group>"; };
 		D5880A9F1E0FF52C0026E09E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5880AAB1E0FF9350026E09E /* item.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = item.xcassets; sourceTree = "<group>"; };
+		D5880AAD1E0FFA000026E09E /* item.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = item.plist; sourceTree = "<group>"; };
+		D5880AAF1E1006330026E09E /* CollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		D5880AB01E1006330026E09E /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		D5880AB11E1006330026E09E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +119,11 @@
 				D5880A861E0FF52C0026E09E /* LaunchScreen.storyboard */,
 				D5880A891E0FF52C0026E09E /* Info.plist */,
 				D5880A781E0FF52C0026E09E /* Supporting Files */,
+				D5880AAB1E0FF9350026E09E /* item.xcassets */,
+				D5880AAD1E0FFA000026E09E /* item.plist */,
+				D5880AAF1E1006330026E09E /* CollectionViewCell.h */,
+				D5880AB01E1006330026E09E /* CollectionViewCell.m */,
+				D5880AB11E1006330026E09E /* CollectionViewCell.xib */,
 			);
 			path = "ex2-1-12";
 			sourceTree = "<group>";
@@ -243,7 +257,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5880AAC1E0FF9350026E09E /* item.xcassets in Resources */,
 				D5880A881E0FF52C0026E09E /* LaunchScreen.storyboard in Resources */,
+				D5880AB31E1006330026E09E /* CollectionViewCell.xib in Resources */,
+				D5880AAE1E0FFA000026E09E /* item.plist in Resources */,
 				D5880A851E0FF52C0026E09E /* Assets.xcassets in Resources */,
 				D5880A831E0FF52C0026E09E /* Main.storyboard in Resources */,
 			);
@@ -272,6 +289,7 @@
 			files = (
 				D5880A801E0FF52C0026E09E /* ViewController.m in Sources */,
 				D5880A7D1E0FF52C0026E09E /* AppDelegate.m in Sources */,
+				D5880AB21E1006330026E09E /* CollectionViewCell.m in Sources */,
 				D5880A7A1E0FF52C0026E09E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
