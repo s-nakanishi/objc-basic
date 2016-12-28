@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>side</key>
+	<array>
+		<string>misoshiru</string>
+		<string>chawanmushi</string>
+		<string>udon</string>
+	</array>
+	<key>nigiri</key>
+	<array>
+		<string>tamago</string>
+		<string>tako</string>
+		<string>tai</string>
+		<string>ikura</string>
+		<string>salmon</string>
+		<string>ebi</string>
+		<string>unagi</string>
+		<string>ika</string>
+		<string>hamachi</string>
+		<string>maguro</string>
+	</array>
+</dict>
+</plist>

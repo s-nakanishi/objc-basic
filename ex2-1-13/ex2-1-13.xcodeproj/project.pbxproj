@@ -15,6 +15,12 @@
 		D525FCE81E13A8D4007D7D25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D525FCE61E13A8D4007D7D25 /* LaunchScreen.storyboard */; };
 		D525FCF31E13A8D5007D7D25 /* ex2_1_13Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D525FCF21E13A8D5007D7D25 /* ex2_1_13Tests.m */; };
 		D525FCFE1E13A8D5007D7D25 /* ex2_1_13UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D525FCFD1E13A8D5007D7D25 /* ex2_1_13UITests.m */; };
+		D525FD0C1E13AD6E007D7D25 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D525FD0B1E13AD6E007D7D25 /* CollectionViewCell.m */; };
+		D525FD111E13AD84007D7D25 /* item.plist in Resources */ = {isa = PBXBuildFile; fileRef = D525FD101E13AD84007D7D25 /* item.plist */; };
+		D525FD131E13ADDB007D7D25 /* item.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D525FD121E13ADDB007D7D25 /* item.xcassets */; };
+		D525FD151E13B00C007D7D25 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D525FD141E13B00C007D7D25 /* CollectionViewCell.xib */; };
+		D525FD1F1E13B972007D7D25 /* CollectionSection.m in Sources */ = {isa = PBXBuildFile; fileRef = D525FD1E1E13B972007D7D25 /* CollectionSection.m */; };
+		D525FD211E13BA31007D7D25 /* CollectionSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = D525FD201E13BA31007D7D25 /* CollectionSection.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,14 @@
 		D525FCF91E13A8D5007D7D25 /* ex2-1-13UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex2-1-13UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D525FCFD1E13A8D5007D7D25 /* ex2_1_13UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex2_1_13UITests.m; sourceTree = "<group>"; };
 		D525FCFF1E13A8D5007D7D25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D525FD0B1E13AD6E007D7D25 /* CollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
+		D525FD0D1E13AD76007D7D25 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		D525FD101E13AD84007D7D25 /* item.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = item.plist; sourceTree = "<group>"; };
+		D525FD121E13ADDB007D7D25 /* item.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = item.xcassets; sourceTree = "<group>"; };
+		D525FD141E13B00C007D7D25 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		D525FD1D1E13B972007D7D25 /* CollectionSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionSection.h; sourceTree = "<group>"; };
+		D525FD1E1E13B972007D7D25 /* CollectionSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionSection.m; sourceTree = "<group>"; };
+		D525FD201E13BA31007D7D25 /* CollectionSection.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionSection.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,10 +120,18 @@
 				D525FCDE1E13A8D4007D7D25 /* ViewController.h */,
 				D525FCDF1E13A8D4007D7D25 /* ViewController.m */,
 				D525FCE11E13A8D4007D7D25 /* Main.storyboard */,
+				D525FD0B1E13AD6E007D7D25 /* CollectionViewCell.m */,
+				D525FD0D1E13AD76007D7D25 /* CollectionViewCell.h */,
+				D525FD101E13AD84007D7D25 /* item.plist */,
 				D525FCE41E13A8D4007D7D25 /* Assets.xcassets */,
 				D525FCE61E13A8D4007D7D25 /* LaunchScreen.storyboard */,
 				D525FCE91E13A8D4007D7D25 /* Info.plist */,
 				D525FCD81E13A8D4007D7D25 /* Supporting Files */,
+				D525FD121E13ADDB007D7D25 /* item.xcassets */,
+				D525FD141E13B00C007D7D25 /* CollectionViewCell.xib */,
+				D525FD1D1E13B972007D7D25 /* CollectionSection.h */,
+				D525FD1E1E13B972007D7D25 /* CollectionSection.m */,
+				D525FD201E13BA31007D7D25 /* CollectionSection.xib */,
 			);
 			path = "ex2-1-13";
 			sourceTree = "<group>";
@@ -245,7 +267,11 @@
 			files = (
 				D525FCE81E13A8D4007D7D25 /* LaunchScreen.storyboard in Resources */,
 				D525FCE51E13A8D4007D7D25 /* Assets.xcassets in Resources */,
+				D525FD151E13B00C007D7D25 /* CollectionViewCell.xib in Resources */,
+				D525FD111E13AD84007D7D25 /* item.plist in Resources */,
+				D525FD131E13ADDB007D7D25 /* item.xcassets in Resources */,
 				D525FCE31E13A8D4007D7D25 /* Main.storyboard in Resources */,
+				D525FD211E13BA31007D7D25 /* CollectionSection.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +296,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D525FD1F1E13B972007D7D25 /* CollectionSection.m in Sources */,
 				D525FCE01E13A8D4007D7D25 /* ViewController.m in Sources */,
 				D525FCDD1E13A8D4007D7D25 /* AppDelegate.m in Sources */,
+				D525FD0C1E13AD6E007D7D25 /* CollectionViewCell.m in Sources */,
 				D525FCDA1E13A8D4007D7D25 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
