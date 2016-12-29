@@ -15,8 +15,6 @@
 		D5321C781E1536830060C3F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D5321C761E1536830060C3F8 /* LaunchScreen.storyboard */; };
 		D5321C831E1536830060C3F8 /* ex2_1_16Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5321C821E1536830060C3F8 /* ex2_1_16Tests.m */; };
 		D5321C8E1E1536830060C3F8 /* ex2_1_16UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D5321C8D1E1536830060C3F8 /* ex2_1_16UITests.m */; };
-		D5321CF01E1540630060C3F8 /* Page.m in Sources */ = {isa = PBXBuildFile; fileRef = D5321CEE1E1540630060C3F8 /* Page.m */; };
-		D5321CF11E1540630060C3F8 /* Page.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5321CEF1E1540630060C3F8 /* Page.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +51,6 @@
 		D5321C891E1536830060C3F8 /* ex2-1-16UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex2-1-16UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5321C8D1E1536830060C3F8 /* ex2_1_16UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex2_1_16UITests.m; sourceTree = "<group>"; };
 		D5321C8F1E1536830060C3F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D5321CED1E1540630060C3F8 /* Page.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page.h; sourceTree = "<group>"; };
-		D5321CEE1E1540630060C3F8 /* Page.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page.m; sourceTree = "<group>"; };
-		D5321CEF1E1540630060C3F8 /* Page.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Page.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +110,6 @@
 				D5321C761E1536830060C3F8 /* LaunchScreen.storyboard */,
 				D5321C791E1536830060C3F8 /* Info.plist */,
 				D5321C681E1536830060C3F8 /* Supporting Files */,
-				D5321CED1E1540630060C3F8 /* Page.h */,
-				D5321CEE1E1540630060C3F8 /* Page.m */,
-				D5321CEF1E1540630060C3F8 /* Page.xib */,
 			);
 			path = "ex2-1-16";
 			sourceTree = "<group>";
@@ -253,7 +245,6 @@
 			files = (
 				D5321C781E1536830060C3F8 /* LaunchScreen.storyboard in Resources */,
 				D5321C751E1536830060C3F8 /* Assets.xcassets in Resources */,
-				D5321CF11E1540630060C3F8 /* Page.xib in Resources */,
 				D5321C731E1536830060C3F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -281,7 +272,6 @@
 			files = (
 				D5321C701E1536830060C3F8 /* ViewController.m in Sources */,
 				D5321C6D1E1536830060C3F8 /* AppDelegate.m in Sources */,
-				D5321CF01E1540630060C3F8 /* Page.m in Sources */,
 				D5321C6A1E1536830060C3F8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,6 +498,7 @@
 				D5321C941E1536830060C3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5321C951E1536830060C3F8 /* Build configuration list for PBXNativeTarget "ex2-1-16Tests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +507,7 @@
 				D5321C971E1536830060C3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D5321C981E1536830060C3F8 /* Build configuration list for PBXNativeTarget "ex2-1-16UITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +516,7 @@
 				D5321C9A1E1536830060C3F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

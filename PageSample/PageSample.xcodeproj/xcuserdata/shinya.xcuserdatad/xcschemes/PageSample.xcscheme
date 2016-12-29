@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5321CA31E1538F10060C3F8"
-               BuildableName = "pageSample.app"
-               BlueprintName = "pageSample"
-               ReferencedContainer = "container:pageSample.xcodeproj">
+               BlueprintIdentifier = "D5321DC01E1561BD0060C3F8"
+               BuildableName = "PageSample.app"
+               BlueprintName = "PageSample"
+               ReferencedContainer = "container:PageSample.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,30 +32,30 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5321CC21E1538F20060C3F8"
-               BuildableName = "pageSampleTests.xctest"
-               BlueprintName = "pageSampleTests"
-               ReferencedContainer = "container:pageSample.xcodeproj">
+               BlueprintIdentifier = "D5321DDF1E1561BE0060C3F8"
+               BuildableName = "PageSampleTests.xctest"
+               BlueprintName = "PageSampleTests"
+               ReferencedContainer = "container:PageSample.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5321CCD1E1538F20060C3F8"
-               BuildableName = "pageSampleUITests.xctest"
-               BlueprintName = "pageSampleUITests"
-               ReferencedContainer = "container:pageSample.xcodeproj">
+               BlueprintIdentifier = "D5321DEA1E1561BE0060C3F8"
+               BuildableName = "PageSampleUITests.xctest"
+               BlueprintName = "PageSampleUITests"
+               ReferencedContainer = "container:PageSample.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5321CA31E1538F10060C3F8"
-            BuildableName = "pageSample.app"
-            BlueprintName = "pageSample"
-            ReferencedContainer = "container:pageSample.xcodeproj">
+            BlueprintIdentifier = "D5321DC01E1561BD0060C3F8"
+            BuildableName = "PageSample.app"
+            BlueprintName = "PageSample"
+            ReferencedContainer = "container:PageSample.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -75,10 +75,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5321CA31E1538F10060C3F8"
-            BuildableName = "pageSample.app"
-            BlueprintName = "pageSample"
-            ReferencedContainer = "container:pageSample.xcodeproj">
+            BlueprintIdentifier = "D5321DC01E1561BD0060C3F8"
+            BuildableName = "PageSample.app"
+            BlueprintName = "PageSample"
+            ReferencedContainer = "container:PageSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,10 +94,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5321CA31E1538F10060C3F8"
-            BuildableName = "pageSample.app"
-            BlueprintName = "pageSample"
-            ReferencedContainer = "container:pageSample.xcodeproj">
+            BlueprintIdentifier = "D5321DC01E1561BD0060C3F8"
+            BuildableName = "PageSample.app"
+            BlueprintName = "PageSample"
+            ReferencedContainer = "container:PageSample.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
