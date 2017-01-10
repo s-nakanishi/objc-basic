@@ -1,18 +1,18 @@
 //
-//  pageSampleTests.m
-//  pageSampleTests
+//  PageSampleTests.m
+//  PageSampleTests
 //
-//  Created by 中西　真也 on 2016/12/29.
+//  Created by 中西　真也 on 2016/12/30.
 //  Copyright © 2016年 Nakanishi. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface pageSampleTests : XCTestCase
+@interface PageSampleTests : XCTestCase
 
 @end
 
-@implementation pageSampleTests
+@implementation PageSampleTests
 
 - (void)setUp {
     [super setUp];

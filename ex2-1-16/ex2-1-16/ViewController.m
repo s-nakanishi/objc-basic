@@ -7,11 +7,14 @@
 //
 
 #import "ViewController.h"
-#import "Page.h"
 
 @interface ViewController ()
 @property (strong, nonatomic) UIPageViewController *pageViewController;
-@property (strong, nonatomic) NSArray *pageTitles;
+@property (nonatomic) UIViewController *page1;
+@property (nonatomic) UIViewController *page2;
+@property (nonatomic) UIViewController *page3;
+@property (nonatomic) NSArray *pages;
+
 @property NSInteger currentPageIndex;
 
 @end
@@ -25,8 +28,7 @@
   
   self.currentPageIndex--;
   
-  NSArray *viewControllers = [self.pageViewController viewControllers];
-  return viewControllers[self.currentPageIndex];
+  return self.pages[self.currentPageIndex];
 }
 
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController {
@@ -36,8 +38,7 @@
   
   self.currentPageIndex++;
 
-  NSArray *viewControllers = [self.pageViewController viewControllers];
-  return viewControllers[self.currentPageIndex];
+  return self.pages[self.currentPageIndex];
 }
 
 - (void)viewDidLoad {
@@ -50,16 +51,12 @@
   self.pageViewController.dataSource = self;
   self.pageViewController.delegate = self;
   
-  Page *page1 = [[Page alloc] initWithNibName:@"Page" bundle:[NSBundle mainBundle]];
-//  page1.pageNumber.text = @"1/3";
+  self.page1 = [self.storyboard instantiateViewControllerWithIdentifier:@"Page1"];
+  self.page2 = [self.storyboard instantiateViewControllerWithIdentifier:@"Page2"];
+  self.page3 = [self.storyboard instantiateViewControllerWithIdentifier:@"Page3"];
+  self.pages = @[self.page1, self.page2, self.page3];
 
-  Page *page2 = [[Page alloc] initWithNibName:@"Page" bundle:[NSBundle mainBundle]];
-//  page2.pageNumber.text = @"2/3";
-  
-  Page *page3 = [[Page alloc] initWithNibName:@"Page" bundle:[NSBundle mainBundle]];
-//  page3.pageNumber.text = @"3/3";
-  
-  NSArray *viewControllers = @[page1, page2, page3];
+  NSArray *viewControllers = @[self.page1];
   [self.pageViewController setViewControllers:viewControllers direction:UIPageViewControllerNavigationDirectionForward animated:NO completion:nil];
   
   // UIPageViewControllerのサイズを変更（UIPageControlを上に表示する為）
