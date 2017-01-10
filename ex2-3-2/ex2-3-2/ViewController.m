@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "FMDatabase.h"
 
 @interface ViewController ()
 
@@ -16,7 +17,19 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  
+  NSArray *paths = NSSearchPathForDirectoriesInDomains( NSDocumentDirectory, NSUserDomainMask, YES );
+  NSString *dir  = [paths objectAtIndex:0];
+  self.databasePath   = [dir stringByAppendingPathComponent:@"todo.db"];
+  NSLog(@"%@", self.databasePath);
+  
+  FMDatabase *db  = [FMDatabase databaseWithPath:self.databasePath];
+  
+  NSString *sql = @"CREATE TABLE tr_todo(todo_id INTEGER PRIMARY KEY, todo_title TEXT, todo_contents TEXT, created TEXT, modified TEXT, limit_date TEXT, delete_flg INTEGER); ";
+  
+  [db open];
+  [db executeUpdate:sql];
+  [db close];
 }
 
 - (void)didReceiveMemoryWarning {
