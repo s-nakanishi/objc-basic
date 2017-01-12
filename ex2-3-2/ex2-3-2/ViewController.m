@@ -17,6 +17,8 @@
 
 @property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
 
+@property (weak, nonatomic) IBOutlet UITableView *todoList;
+
 @end
 
 @implementation ViewController
@@ -27,7 +29,7 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-  cell.textLabel.text =  @"";
+  cell.textLabel.text =  self.items[indexPath.row];
   return cell;
 }
 
@@ -41,7 +43,7 @@
   
   self.db  = [FMDatabase databaseWithPath:self.databasePath];
   
-  NSString *sql = @"CREATE TABLE tr_todo(todo_id INTEGER PRIMARY KEY AUTOINCREMENT, todo_title TEXT, todo_contents TEXT, created TEXT, modified TEXT, limit_date TEXT, delete_flg INTEGER); ";
+  NSString *sql = @"CREATE TABLE IF NOT EXISTS tr_todo(todo_id INTEGER PRIMARY KEY AUTOINCREMENT, todo_title TEXT, todo_contents TEXT, created TEXT, modified TEXT, limit_date TEXT, delete_flg INTEGER); ";
 
   [self.db open];
   [self.db executeUpdate:sql];
@@ -54,6 +56,22 @@
    target:self
    action:@selector(goAddView)];
   self.navItem.rightBarButtonItem = btn;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+  NSString *sql = @"SELECT * FROM tr_todo ORDER BY limit_date;";
+  
+  [self.db open];
+  FMResultSet *results = [self.db executeQuery:sql];
+  [self.items removeAllObjects];
+  while( [results next] ) {
+    NSString * todo_title = [results stringForColumn:@"todo_title"];
+    NSString * limit_date = [results stringForColumn:@"limit_date"];
+    NSString *item = [NSString stringWithFormat:@"%@ %@", limit_date, todo_title];
+    [self.items addObject:item];
+  }
+  [self.db close];
+  [self.todoList reloadData];
 }
 
 - (void)didReceiveMemoryWarning {
