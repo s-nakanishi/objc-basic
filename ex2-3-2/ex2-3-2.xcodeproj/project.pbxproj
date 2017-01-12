@@ -10,6 +10,7 @@
 		8345AA319911A8906DE41679 /* libPods-ex2-3-2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5F1418B8F0AA844F222D9B7 /* libPods-ex2-3-2.a */; };
 		CAF3E35C8A32134CAD581C4A /* libPods-ex2-3-2UITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A2F714983587BD596CFF92 /* libPods-ex2-3-2UITests.a */; };
 		D08AB4477E8E75B3CBAFB14E /* libPods-ex2-3-2Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2906C68E78378067D7B4B58 /* libPods-ex2-3-2Tests.a */; };
+		D54B77591E274881005B9CBC /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D54B77581E274881005B9CBC /* AddViewController.m */; };
 		D59AC7B01E247F9A00522681 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D59AC7AF1E247F9A00522681 /* main.m */; };
 		D59AC7B31E247F9A00522681 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D59AC7B21E247F9A00522681 /* AppDelegate.m */; };
 		D59AC7B61E247F9A00522681 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D59AC7B51E247F9A00522681 /* ViewController.m */; };
@@ -45,6 +46,8 @@
 		AB578AAF6AC957C86B557108 /* Pods-ex2-3-2UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ex2-3-2UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ex2-3-2UITests/Pods-ex2-3-2UITests.release.xcconfig"; sourceTree = "<group>"; };
 		B413FBF2DE16ADFBD6B9ABA9 /* Pods-ex2-3-2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ex2-3-2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ex2-3-2Tests/Pods-ex2-3-2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D487330DAD5B9262274D48B0 /* Pods-ex2-3-2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ex2-3-2.release.xcconfig"; path = "Pods/Target Support Files/Pods-ex2-3-2/Pods-ex2-3-2.release.xcconfig"; sourceTree = "<group>"; };
+		D54B77571E274881005B9CBC /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		D54B77581E274881005B9CBC /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
 		D59AC7AB1E247F9900522681 /* ex2-3-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ex2-3-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59AC7AF1E247F9A00522681 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D59AC7B11E247F9A00522681 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				D59AC7BC1E247F9A00522681 /* LaunchScreen.storyboard */,
 				D59AC7BF1E247F9A00522681 /* Info.plist */,
 				D59AC7AE1E247F9A00522681 /* Supporting Files */,
+				D54B77571E274881005B9CBC /* AddViewController.h */,
+				D54B77581E274881005B9CBC /* AddViewController.m */,
 			);
 			path = "ex2-3-2";
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 			files = (
 				D59AC7B61E247F9A00522681 /* ViewController.m in Sources */,
 				D59AC7B31E247F9A00522681 /* AppDelegate.m in Sources */,
+				D54B77591E274881005B9CBC /* AddViewController.m in Sources */,
 				D59AC7B01E247F9A00522681 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
