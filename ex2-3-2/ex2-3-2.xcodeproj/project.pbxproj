@@ -19,6 +19,7 @@
 		D59AC7BE1E247F9A00522681 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D59AC7BC1E247F9A00522681 /* LaunchScreen.storyboard */; };
 		D59AC7C91E247F9A00522681 /* ex2_3_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D59AC7C81E247F9A00522681 /* ex2_3_2Tests.m */; };
 		D59AC7D41E247F9A00522681 /* ex2_3_2UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D59AC7D31E247F9A00522681 /* ex2_3_2UITests.m */; };
+		D5AFA7C81E278BC900D06555 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA7C71E278BC900D06555 /* Item.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		D59AC7CF1E247F9A00522681 /* ex2-3-2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ex2-3-2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D59AC7D31E247F9A00522681 /* ex2_3_2UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ex2_3_2UITests.m; sourceTree = "<group>"; };
 		D59AC7D51E247F9A00522681 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5AFA7C41E2788A800D06555 /* Item.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		D5AFA7C71E278BC900D06555 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		F2906C68E78378067D7B4B58 /* libPods-ex2-3-2Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ex2-3-2Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5F1418B8F0AA844F222D9B7 /* libPods-ex2-3-2.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ex2-3-2.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -142,6 +145,8 @@
 				D59AC7AE1E247F9A00522681 /* Supporting Files */,
 				D54B77571E274881005B9CBC /* AddViewController.h */,
 				D54B77581E274881005B9CBC /* AddViewController.m */,
+				D5AFA7C41E2788A800D06555 /* Item.h */,
+				D5AFA7C71E278BC900D06555 /* Item.m */,
 			);
 			path = "ex2-3-2";
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5AFA7C81E278BC900D06555 /* Item.m in Sources */,
 				D59AC7B61E247F9A00522681 /* ViewController.m in Sources */,
 				D59AC7B31E247F9A00522681 /* AppDelegate.m in Sources */,
 				D54B77591E274881005B9CBC /* AddViewController.m in Sources */,
