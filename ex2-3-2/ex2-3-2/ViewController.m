@@ -9,10 +9,11 @@
 #import "ViewController.h"
 #import "FMDatabase.h"
 #import "AddViewController.h"
+#import "item.h"
 
 @interface ViewController ()
 
-@property(nonatomic) NSMutableArray *items;
+@property(nonatomic) NSMutableArray<Item *> *items;
 @property(nonatomic) FMDatabase *db;
 
 @property (weak, nonatomic) IBOutlet UINavigationItem *navItem;
@@ -29,7 +30,8 @@
 
 - (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Cell"];
-  cell.textLabel.text =  self.items[indexPath.row];
+      NSString *item = [NSString stringWithFormat:@"%@ %@", self.items[indexPath.row].limit, self.items[indexPath.row].title];
+  cell.textLabel.text = item;
   return cell;
 }
 
@@ -49,7 +51,7 @@
   [self.db executeUpdate:sql];
   [self.db close];
   
-  self.items = [NSMutableArray new];
+  self.items = [NSMutableArray<Item *> new];
   UIBarButtonItem *btn =
   [[UIBarButtonItem alloc]
    initWithBarButtonSystemItem: UIBarButtonSystemItemAdd
@@ -65,13 +67,41 @@
   FMResultSet *results = [self.db executeQuery:sql];
   [self.items removeAllObjects];
   while( [results next] ) {
-    NSString * todo_title = [results stringForColumn:@"todo_title"];
-    NSString * limit_date = [results stringForColumn:@"limit_date"];
-    NSString *item = [NSString stringWithFormat:@"%@ %@", limit_date, todo_title];
-    [self.items addObject:item];
+    int deleteFlag = [results intForColumn:@"delete_flg"];
+    if ( deleteFlag==0 ) {
+      Item *item = [Item alloc];
+      item.id = [results intForColumn:@"todo_id"];
+      item.title = [results stringForColumn:@"todo_title"];
+      item.contents = [results stringForColumn:@"todo_contents"];
+      item.created = [results stringForColumn:@"created"];
+      item.modified = [results stringForColumn:@"modified"];
+      item.limit = [results stringForColumn:@"limit_date"];
+      item.limit = [results stringForColumn:@"limit_date"];
+      
+      [self.items addObject:item];
+    }
   }
   [self.db close];
   [self.todoList reloadData];
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+}
+
+- (NSArray *)tableView:(UITableView *)tableView editActionsForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+  return @[[UITableViewRowAction rowActionWithStyle: UITableViewRowActionStyleDestructive
+      title:@"Delete"
+      handler:^(UITableViewRowAction *action, NSIndexPath *indexPath) {
+        [self.items removeObjectAtIndex:indexPath.row];
+        [self.todoList deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+        NSString *sql = @"UPDATE tr_todo SET delete_flg=1 WHERE todo_title=?; ";
+        
+        [self.db open];
+        [self.db executeUpdate:sql, self.items[indexPath.row].title];
+        [self.db close];
+      }]];
 }
 
 - (void)didReceiveMemoryWarning {
