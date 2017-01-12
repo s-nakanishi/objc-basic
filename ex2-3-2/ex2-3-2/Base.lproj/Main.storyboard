@@ -19,13 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1DB-Sg-D1k">
-                                <rect key="frame" x="20" y="64" width="560" height="536"/>
+                                <rect key="frame" x="20" y="34" width="560" height="566"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="BEG-qv-WYL"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xX8-VI-Ug2"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="1DB-Sg-D1k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="IUP-Na-vvI"/>
+                            <constraint firstItem="1DB-Sg-D1k" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-30" id="IUP-Na-vvI"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="1DB-Sg-D1k" secondAttribute="bottom" id="MSf-us-Bp2"/>
                             <constraint firstAttribute="trailingMargin" secondItem="1DB-Sg-D1k" secondAttribute="trailing" id="Pur-Dx-hCj"/>
                             <constraint firstItem="1DB-Sg-D1k" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="RPU-FB-t5q"/>
@@ -34,6 +38,7 @@
                     <navigationItem key="navigationItem" title="ToDo一覧画面" id="DE0-EQ-Vjo"/>
                     <connections>
                         <outlet property="navItem" destination="DE0-EQ-Vjo" id="j98-aY-NRa"/>
+                        <outlet property="todoList" destination="1DB-Sg-D1k" id="SIT-dN-KOg"/>
                         <segue destination="aEq-eh-gN8" kind="push" id="fPQ-IZ-agl"/>
                     </connections>
                 </viewController>
